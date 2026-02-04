@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Valentine ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2d2d2d;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 420px;
+      width: 92%;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      padding: 24px 22px 28px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: #ff4d6d;
+      transform: rotate(45deg);
+      top: -40px;
+      right: -40px;
+      opacity: 0.25;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      background: #ff4d6d;
+      border-radius: 50%;
+    }
+
+    .heart::before { top: -60px; left: 0; }
+    .heart::after { left: -60px; top: 0; }
+
+    h1 {
+      margin: 10px 0 8px;
+      font-size: 1.9rem;
+      color: #ff4d6d;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      opacity: 0.8;
+      margin-bottom: 14px;
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ff4d6d;
+      margin: 10px auto 12px;
+      display: block;
+      background: #f3f3f3;
+    }
+
+    .message {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin: 12px 0 18px;
+    }
+
+    .reasons {
+      text-align: left;
+      background: #fff5f7;
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+    }
+
+    .reasons h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      color: #ff4d6d;
+      text-align: center;
+    }
+
+    .reasons ul {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #ff4d6d;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 10px 20px rgba(255,77,109,0.35);
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 24px rgba(255,77,109,0.45);
+    }
+
+    .footer {
+      margin-top: 14px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="heart"></div>
+
+    <!-- Replace src with her photo or a memory photo -->
+    <!-- Save your photo as 'our-photo.jpg' in the same folder as this HTML file -->
+    <img class="photo" src="our-photo.jpg" alt="Our Memory" />
+
+    <h1>For You, My Valentine ❤️</h1>
+    <div class="subtitle">A little page made just for you</div>
+
+    <p class="message">
+      Hey <strong>Tanya</strong>,
+      <br />
+      I’m not the best at big words, but I wanted to build something for you.
+      You make my days lighter, my laughs louder, and my heart calmer.
+      Thank you for being you.
+    </p>
+
+    <div class="reasons">
+      <h3>Why I Love You</h3>
+      <ul>
+        <li>Your smile fixes my bad days.</li>
+        <li>You understand me even when I don’t say much.</li>
+        <li>We can be silly together.</li>
+        <li>You make ordinary moments special.</li>
+      </ul>
+    </div>
+
+    <!-- Optional button: link to a song or your shared memory -->
+    <!-- Autoplay Spotify Embed (note: some browsers may block autoplay with sound) -->
+    <iframe style="border-radius:12px; margin: 10px auto; display:block" src="https://open.spotify.com/embed/track/2njC2umOngBCOj14iHR8K8?utm_source=generator&autoplay=1" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <!-- Fallback button in case autoplay is blocked -->
+    <a class="cta" href="https://open.spotify.com/track/2njC2umOngBCOj14iHR8K8?si=vQErC8erQZyUFjySrgC-6Q" target="_blank">Play Our Song 🎵</a>
+
+    <div class="footer">Made with ❤️ by <strong>Nitin</strong></div>
+  </div>
+</body>
+</html>
